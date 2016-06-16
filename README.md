@@ -7,7 +7,7 @@
 TODO: 以下のコマンドを実行しておく必要あり。
 [参考](http://stackoverflow.com/questions/28392949/running-chromium-inside-docker-gtk-cannot-open-display-0)
 ```
-$ xhost local:root
+$ xhost local:<ログインユーザー名など>
 ```
 
 ## 使用方法
