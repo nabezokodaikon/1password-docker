@@ -1,5 +1,3 @@
 #!/bin/bash
 
-docker build -t nabezokodaikon/ubuntu:wine .
-
-exit 0
+docker build -t nabezokodaikon/ubuntu:1password .
