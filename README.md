@@ -1,6 +1,9 @@
 # 1Password-docker
 1Passwordをdocker内のwineで実行する。
 
+## 参考
+* https://github.com/geekylucas/dockerfiles/tree/master/1password-wine
+
 ## 準備
 
 ### xhost
