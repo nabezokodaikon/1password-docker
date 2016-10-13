@@ -41,7 +41,7 @@ ENV HOME /home/wineuser
 ENV WINEPREFIX ${HOME}/.wine
 ENV WINEDLLOVERRIDES mscoree,mshtml=
 WORKDIR ${HOME}
-RUN wget -P ${HOME} -O installer.exe https://d13itkw33a7sus.cloudfront.net/dist/1P/win4/1Password-4.6.0.604.exe 
+RUN wget -P ${HOME} -O installer.exe https://d13itkw33a7sus.cloudfront.net/dist/1P/win4/1Password-4.6.1.616.exe
 
 RUN xvfb-run -a bash -c "\
     /usr/bin/wine ${HOME}/installer.exe /VERYSILENT /DIR=c:\1Password && \
