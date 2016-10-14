@@ -28,3 +28,6 @@ $ xhost local:<ログインユーザー名など>
 ## TODO
 
 * 初回以降の起動時にウィンドウサイズを大きくしようとすると、強制終了してしまう。
+* 接続にxpraを使用する。
+    * https://wiki.archlinuxjp.org/index.php/Xpra
+    * https://blog.docker.com/2013/07/docker-desktop-your-desktop-over-ssh-running-inside-of-a-docker-container/
