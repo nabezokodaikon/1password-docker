@@ -3,31 +3,24 @@
 
 ## 参考
 * https://github.com/geekylucas/dockerfiles/tree/master/1password-wine
-
-## 準備
-
-### xhost
-TODO: 以下のコマンドを実行しておく必要あり。
-[参考](http://stackoverflow.com/questions/28392949/running-chromium-inside-docker-gtk-cannot-open-display-0)
-```
-$ xhost local:<ログインユーザー名など>
-```
+* http://wiki.ros.org/docker/Tutorials/GUI
 
 ## 使用方法
-
 ### Dockerイメージ作成
-1. `build.sh`を実行する。
+`build.sh`を実行する。
+
+### 初回起動
+1Passowrdの初期設定を行う。
 1. `init.sh`を実行する。
 1. `1Password.opvault`ディレクトリを指定する。
 1. ライセンスキーを入力する。
 1. 1Passwordを終了する。
 
-### 1Password起動
+### 通常起動
 `start.sh`を実行する。
 
 ## TODO
-
-* 初回以降の起動時にウィンドウサイズを大きくしようとすると、強制終了してしまう。
-* 接続にxpraを使用する。
-    * https://wiki.archlinuxjp.org/index.php/Xpra
-    * https://blog.docker.com/2013/07/docker-desktop-your-desktop-over-ssh-running-inside-of-a-docker-container/
+* READMEや各種コメントを英文にする。
+* Chromeの拡張で使用できるようにする。
+    * `xdg-open`がキーワードっぽい。
+* ウィンドウサイズを大きくしようとすると、強制終了してしまう。
